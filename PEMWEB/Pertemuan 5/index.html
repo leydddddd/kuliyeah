@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aku Portofolio</title>
+    <link id="stylesheets" rel="stylesheet" href="gayaku.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <script>
+        function changeCSS(attrib) {
+            document.getElementById("stylesheets").setAttribute("href", attrib);
+        }
+        function changing() {
+            changeCSS("styles.css");
+        }
+        window.onload = function () {
+            setTimeout(function () {
+                alert("Selamat datang di portofolio saya! 🌿");
+            }, 500);
+        };
+    </script>
+</head>
+<body>
+    <!-- NAVBAR AREA -->
+     <section>
+        <div class="nav-bar">
+            <ul class="ul-navbar">
+                <a href="#div-home"><li class="li-navbar">Menu</li></a>
+                <a href="#div-article"><li class="li-navbar">About</li></a>
+                <a href="#div-footer"><li class="li-navbar">Contact</li></a>
+                <button id="styles-button" onclick="changing()">Change The Style</button>
+            </ul>
+        </div>
+     </section>
+    <!-- NAVBAR END -->
+
+    <!-- HOME AREA -->
+     <section>
+        <div id="div-home">
+            <div id="div-text">
+                <h1>WELCOME TO MY PORTOFOLIO</h1>
+                <p>Aku cinta tanaman. Aku sangat cinta tanaman</p>
+            </div>
+        </div>
+     </section>
+    <!-- HOME END -->
+
+    <!-- ARTICLE AREA -->
+     <section>
+        <div id="div-article">
+            <div id="div-text">
+                <h1>ARTICLE</h1>
+                <p>Aku cinta tanaman. Aku sangat cinta tanaman</p>
+            </div>
+        </div>
+     </section>
+    <!-- ARTICLE END -->
+
+    <!-- FOOTER AREA -->
+     <section>
+        <div id="div-footer">
+            <div id="div-text">
+                <h1>CONTACT</h1>
+                <p>Email : akbar.dwi01@upi.edu</p>
+        </div>
+     </section>
+     <!-- FOOTER END -->
+
+     <a id="button" href="#div-home">HOME</a>
+</body>
+</html>

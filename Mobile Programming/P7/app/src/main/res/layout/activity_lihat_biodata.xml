@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lihat_biodata"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- NOMOR -->
+    <TextView
+        android:id="@+id/txt_numb_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nomor:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_numb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/txt_numb_label"
+        android:layout_alignBaseline="@id/txt_numb_label"
+        android:layout_marginStart="16dp"
+        android:text="12345" />
+
+    <!-- NAMA -->
+    <TextView
+        android:id="@+id/txt_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_numb_label"
+        android:layout_marginTop="16dp"
+        android:text="Nama:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/txt_name_label"
+        android:layout_alignBaseline="@id/txt_name_label"
+        android:layout_marginStart="16dp"
+        android:text="John Doe" />
+
+    <!-- TANGGAL LAHIR -->
+    <TextView
+        android:id="@+id/txt_born_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_name_label"
+        android:layout_marginTop="16dp"
+        android:text="Tanggal Lahir:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_born"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/txt_born_label"
+        android:layout_alignBaseline="@id/txt_born_label"
+        android:layout_marginStart="16dp"
+        android:text="01/01/2000" />
+
+    <!-- JENIS KELAMIN -->
+    <TextView
+        android:id="@+id/txt_gedr_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_born_label"
+        android:layout_marginTop="16dp"
+        android:text="Jenis Kelamin:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_gedr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/txt_gedr_label"
+        android:layout_alignBaseline="@id/txt_gedr_label"
+        android:layout_marginStart="16dp"
+        android:text="Laki-laki" />
+
+    <!-- ALAMAT -->
+    <TextView
+        android:id="@+id/text_addr_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_gedr_label"
+        android:layout_marginTop="16dp"
+        android:text="Alamat:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/text_addr_label"
+        android:layout_alignBaseline="@id/text_addr_label"
+        android:layout_marginStart="16dp"
+        android:text="Jl. Contoh No.123" />
+
+    <!-- BUTTON -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:layout_below="@id/text_addr_label"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+.jumbotron {
+  background: #00ffff;
+  padding-top: 25px;
+}
+
+#about-me {
+  background: #ffff;
+  padding-top: 25px;
+}
+
+#projects {
+  background: #00ffff;
+  padding-top: 25px;
+}
+
+#forms-input {
+  background: #ffff;
+  padding-top: 25px;
+}
+
+#footer {
+  padding-top: 25px;
+}
+
+body {
+  min-height: 2000px;
+}

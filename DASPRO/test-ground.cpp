@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a = 5;
+    int b = 10;
+
+    if(a + b != 10)
+    {
+        cout<<"Ternyata Benar"<<endl;
+    }
+}

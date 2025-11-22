@@ -1,0 +1,103 @@
+.patrick-hand-regular {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Patrick Hand", cursive;
+}
+html {
+    scroll-behavior: smooth;
+}
+.nav-bar {
+    background-color: red;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    height: 55px;
+}
+.ul-navbar {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+.li-navbar {
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 13px 0px;
+    cursor: pointer;
+}
+#button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10%;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+#button:hover {
+    background-color: white;
+    color: black;
+}
+#div-home {
+    height: 100vh;
+    background: black;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div-text {
+    text-align: center;
+    width: 70%;
+}
+#div-article {
+    height: 100vh;
+    background-color: red;
+    color: white;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div-footer {
+    height: 100vh;
+    background-color: blue;
+    color: white;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}

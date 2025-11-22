@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DC Motor Control Wiring Diagram</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .diagram-description {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Diagram Rangkaian Kendali Motor DC</h1>
+
+    <div class="diagram-description">
+      <p>
+        Berikut adalah diagram skematik rangkaian kontrol motor DC untuk
+        praktikum:
+      </p>
+    </div>
+
+    <div class="circuit-diagram">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 600 400"
+        width="100%"
+      >
+        <!-- Background -->
+        <rect width="100%" height="100%" fill="#f0f0f0" />
+
+        <!-- Arduino -->
+        <rect
+          x="50"
+          y="50"
+          width="150"
+          height="200"
+          fill="blue"
+          fill-opacity="0.2"
+          stroke="black"
+        />
+        <text x="125" y="40" text-anchor="middle" font-weight="bold">
+          Arduino Uno
+        </text>
+
+        <!-- L298N Driver -->
+        <rect
+          x="350"
+          y="50"
+          width="150"
+          height="200"
+          fill="green"
+          fill-opacity="0.2"
+          stroke="black"
+        />
+        <text x="425" y="40" text-anchor="middle" font-weight="bold">
+          L298N Driver
+        </text>
+
+        <!-- DC Motor -->
+        <ellipse
+          cx="500"
+          cy="250"
+          rx="50"
+          ry="30"
+          fill="red"
+          fill-opacity="0.2"
+          stroke="black"
+        />
+        <text x="500" y="255" text-anchor="middle">DC Motor</text>
+
+        <!-- Potensiometer -->
+        <rect
+          x="50"
+          y="300"
+          width="50"
+          height="50"
+          fill="orange"
+          fill-opacity="0.2"
+          stroke="black"
+        />
+        <text x="75" y="290" text-anchor="middle">Pot</text>
+
+        <!-- Emergency Button -->
+        <circle
+          cx="150"
+          cy="325"
+          r="20"
+          fill="red"
+          fill-opacity="0.2"
+          stroke="black"
+        />
+        <text x="150" y="370" text-anchor="middle">Emergency</text>
+
+        <!-- LED -->
+        <circle cx="250" cy="325" r="10" fill="yellow" stroke="black" />
+        <text x="250" y="350" text-anchor="middle">LED</text>
+
+        <!-- Connecting Lines -->
+        <line
+          x1="200"
+          y1="100"
+          x2="350"
+          y2="100"
+          stroke="black"
+          stroke-dasharray="5,5"
+        />
+        <line
+          x1="200"
+          y1="150"
+          x2="350"
+          y2="150"
+          stroke="black"
+          stroke-dasharray="5,5"
+        />
+        <line
+          x1="200"
+          y1="200"
+          x2="350"
+          y2="200"
+          stroke="black"
+          stroke-dasharray="5,5"
+        />
+
+        <!-- Pin Labels -->
+        <text x="210" y="100">D9 (PWM)</text>
+        <text x="210" y="150">D10 (IN1)</text>
+        <text x="210" y="200">D11 (IN2)</text>
+        <text x="210" y="250">A0 (Pot)</text>
+        <text x="210" y="300">D2 (Emergency)</text>
+        <text x="210" y="330">D13 (LED)</text>
+      </svg>
+    </div>
+
+    <div class="connection-details">
+      <h2>Detail Koneksi</h2>
+      <ul>
+        <li>Potensiometer (A0) → Kontrol kecepatan</li>
+        <li>D9 → L298N Enable (PWM Speed Control)</li>
+        <li>D10 → L298N IN1</li>
+        <li>D11 → L298N IN2</li>
+        <li>D2 → Emergency Button (Interrupt)</li>
+        <li>D13 → Status LED</li>
+      </ul>
+    </div>
+
+    <div class="notes">
+      <h2>Catatan</h2>
+      <p>
+        Diagram ini menunjukkan koneksi dasar untuk kontrol motor DC menggunakan
+        Arduino dan driver L298N. Pastikan untuk:
+      </p>
+      <ul>
+        <li>Sambungkan power supply ke L298N</li>
+        <li>Ground Arduino dan driver motor terhubung</li>
+        <li>Perhatikan polaritas komponen</li>
+      </ul>
+    </div>
+  </body>
+</html>

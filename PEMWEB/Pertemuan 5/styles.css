@@ -1,0 +1,118 @@
+.patrick-hand-regular {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Patrick Hand", cursive;
+    background-color: #f0f0f0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.nav-bar {
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    height: 55px;
+}
+.ul-navbar {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+.li-navbar {
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+a:hover {
+    color: #333;
+    background-color: #fff;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 13px 0px;
+    cursor: pointer;
+}
+button {
+    font-family: "Patrick Hand", cursive;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 13px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+button:hover {
+    background-color: #fff;
+    color: #333;
+}
+#button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 10%;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+#button:hover {
+    background-color: #fff;
+    color: #333;
+}
+#div-home {
+    height: 100vh;
+    background: #fff;
+    color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div-text {
+    text-align: center;
+    width: 70%;
+}
+#div-article {
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div-footer {
+    height: 100vh;
+    background-color: #555;
+    color: #fff;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}

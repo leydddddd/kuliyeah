@@ -1,0 +1,32 @@
+[
+  {
+    "state": "User: what's the meaning of 'temporal anchoring'?",
+    "action": "ASK_clarify",
+    "bot_response": "Do you mean in psychology or in time-series modeling?",
+    "reward": 2
+  },
+  {
+    "state": "User: what's the meaning of 'temporal anchoring'?",
+    "action": "RESPOND",
+    "bot_response": "Temporal anchoring is a bias where people rely too much on an initial time point.",
+    "reward": 1
+  },
+  {
+    "state": "User: what's the meaning of 'temporal anchoring'?",
+    "action": "RESPOND",
+    "bot_response": "It's a technique used in meditation to travel through time.",
+    "reward": -2
+  },
+  {
+    "state": "User: what's the meaning of 'neural plasticity'?",
+    "action": "ASK_self_check",
+    "bot_response": "Hmm... I think it’s about how the brain changes, but let me check myself.",
+    "reward": 2
+  },
+  {
+    "state": "User: explain 'qubit'",
+    "action": "RESPOND",
+    "bot_response": "A qubit is the basic unit of quantum information.",
+    "reward": 1
+  }
+]
